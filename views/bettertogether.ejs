@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="BetterTogether.css">
+		<link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+		<script defer src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+		<script defer src="emptyForm.js"></script>
+		<script defer src="BetterTogether.js"></script>
+	</head>
+
+<body>
+    <form name="btgForm">
+        <div class="container">
+            <div class="panel-group">
+                <div class="panel-heading">
+                    <h1 class="panel-title">
+                        Better Together
+                    </h1>
+             
+            <div class="errorMessages" id="errors">
+                <h2>Error Messages:</h2>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="container">
+            <div class="panel-group">
+                <div class="panel-heading">
+                    <h2 class="panel-title">
+                        Contract
+                    </h2>
+                </div>
+
+                <div class="row" class="col-md-12">
+
+                    <div class="col-md-3">
+                        <label for="Id">Id</label>
+                        <input type="text" class="form-control" id="Id" name="Id" placeholder="add Id">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="Number">Number</label>
+                        <input type="text" class="form-control" id="Number" name="Number" placeholder="add Number">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="Product">Product</label>
+                        <input type="text" class="form-control" id="Product" name="Product" placeholder="add Product">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="GTC">GTC</label>
+                        <input type="text" class="form-control" id="GTC" name="GTC" placeholder="add GTC">
+                    </div>
+
+                </div>
+
+                <div class="row" class="col-md-12">
+
+                    <div class="col-md-3">
+                        <label for="Currency">Currency</label>
+                        <input type="text" class="form-control" id="Currency" placeholder="add Currency">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="SignatureDate">SignatureDate</label>
+                        <input type="date" class="form-control" id="SignatureDate" placeholder="add SignatureDate">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="StartDate">StartDate</label>
+                        <input type="date" class="form-control" id="StartDate" placeholder="add StartDate">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="Duration">Duration</label>
+                        <input type="number" class="form-control" id="Duration" placeholder="add Duration" min="5" max="20">
+                    </div>
+
+                </div>
+
+                <div class="row" class="col-md-12">
+
+                    <div class="col-md-3">
+                        <label for="SumInsured">SumInsured</label>
+                        <input type="number" class="form-control" id="SumInsured" placeholder="add SumInsured">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="BaseRiskFee">BaseRiskFee</label>
+                        <input type="number" class="form-control" id="BaseRiskFee" placeholder="add BaseRiskFee">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="Loading1">Loading1</label>
+                        <input type="number" class="form-control" id="Loading1" placeholder="add Loading1">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="Loading2">Loading2</label>
+                        <input type="number" class="form-control" id="Loading2" placeholder="add Loading2">
+                    </div>
+
+                </div>
+
+                <div class="row" class="col-md-12">
+
+                    <div class="col-md-3">
+                        <label for="TotalPremium">TotalPremium</label>
+                        <input type="number" class="form-control" id="TotalPremium" placeholder="add TotalPremium">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="PaymentFrequency">PaymentFrequency</label>
+                        <input type="number" class="form-control" id="PaymentFrequency" placeholder="add PaymentFrequency">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="container">
+            <div class="panel-group">
+                <div class="panel-heading">
+                    <h2 class="panel-title">
+                        Policy Holder
+                    </h2>
+                    <br>
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            Basic Data
+                        </h4>
+					</div>
+					<br>	
+                    <div class="row" class="col-md-12">
+
+                        <div class="col-md-3">
+                            <label for="FirstName">First Name</label>
+                            <input type="text" class="form-control" id="PolicyHolderFirstName" name="PolicyHolderFirstName" placeholder="add First Name">
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="LastName">Last Name</label>
+                            <input type="text" class="form-control" id="PolicyHolderLastName" name="PolicyHolderLastName" placeholder="add Last Name">
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="Gender">Gender</label>
+                            <select class="form-select" id="Gender">
+                                <option></option>
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                                <option value="D">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="BirthDate">Birth Date</label>
+                            <input type="date" class="form-control" id="BirthDate" name="BirthDate" placeholder="add Birth Date">
+                        </div>
+
+                    </div>
+                    <div class="row" class="col-md-12">
+
+                        <div class="col-md-3">
+                            <label for="BirthPlace">Birth Place</label>
+                            <input type="text" class="form-control" id="BirthPlace" name="BirthPlace" placeholder="add Birth Place">
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="BirthProvince">Birth Province</label>
+                            <input type="text" class="form-control" id="BirthProvince" name="BirthProvince" placeholder="add Birth Province">
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="BirthCountry">Birth Country</label>
+                            <input type="text" class="form-control" id="BirthCountry" name="BirthCountry" placeholder="add Birth Country">
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="CitizenshipCountry">Citizenship Country</label>
+                            <input type="text" class="form-control" id="CitizenshipCountry" name="CitizenshipCountry" placeholder="add Citizenship Country">
+                        </div>
+
+                    </div>
+                    <div class="row" class="col-md-12">
+
+                        <div class="col-md-3">
+                            <label for="Phone">Phone</label>
+                            <input type="text" class="form-control" id="Phone" name="Phone" placeholder="add Phone">
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="Email">Email</label>
+                            <input type="text" class="form-control" id="Email" name="Email" placeholder="add Email">
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="FiscalCode">Fiscal Code</label>
+                            <input type="text" class="form-control" id="FiscalCode" name="FiscalCode" placeholder="add Fiscal Code">
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        Address
+                    </h4>
+                 </div>
+				<br>	
+                <div class="row" class="col-md-12">
+
+                    <div class="col-md-3">
+                        <label for="Street">Street</label>
+                        <input type="text" class="form-control" id="Street" name="Street" placeholder="add Street">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="StreetNumber">Street Number</label>
+                        <input type="text" class="form-control" id="StreetNumber" name="StreetNumber" placeholder="add Street Number">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="Zip">Zip</label>
+                        <input type="text" class="form-control" id="Zip" name="Zip" placeholder="add Zip">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="City">City</label>
+                        <input type="text" class="form-control" id="City" name="City" placeholder="add City">
+                    </div>
+
+                </div>
+
+                <div class="row" class="col-md-12">
+
+                    <div class="col-md-3">
+                        <label for="Province">Province</label>
+                        <input type="text" class="form-control" id="Province" name="Province" placeholder="add Province">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="Country">Country</label>
+                        <input type="text" class="form-control" id="Country" name="Country" placeholder="add Country">
+                    </div>
+
+                </div>
+                <br>
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        Identity Card
+                    </h4>
+                </div>
+				<br>				
+                <div class="row" class="col-md-12">
+
+                    <div class="col-md-3">
+                        <label for="Type">Type</label>
+                        <input type="text" class="form-control" id="Type" name="Type" placeholder="add Type">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="Number">Number</label>
+                        <input type="text" class="form-control" id="Number" name="Number" placeholder="add Number">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="IssuedBy">Issued By</label>
+                        <input type="text" class="form-control" id="IssuedBy" name="IssuedBy" placeholder="add Issued By">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="IssuedOn">Issued On</label>
+                        <input type="date" class="form-control" id="IssuedOn" name="IssuedOn" placeholder="add Issued On">
+                    </div>
+                </div>
+
+                <div class="row" class="col-md-12">
+
+                    <div class="col-md-3">
+                        <label for="ValidTo">Valid To</label>
+                        <input type="date" class="form-control" id="ValidTo" name="ValidTo" placeholder="add Valid To">
+                    </div>
+
+                </div>
+                <br>
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        Consents
+                    </h4>
+                </div>
+				<br>
+                <div class="row" class="col-md-12">
+
+                    <div class="col-md-3">
+                        <label for="PersonalData">Personal Data</label>
+                        <input type="date" class="form-control" id="PersonalData" name="PersonalData" placeholder="add Personal Data">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="Medical Data">Medical Data</label>
+                        <input type="date" class="form-control" id="MedicalData" name="MedicalData" placeholder="add Medical Data">
+                    </div>
+
+                </div>
+
+                <br><br><br>
+
+                <div class="panel-heading">
+                    <h2 class="panel-title">
+                        Beneficiaries
+                    </h2>
+                </div>
+				<br>
+                <div class="row" class="col-md-12">
+
+                    <div class="col-md-3">
+                        <label for="FirstName">First Name</label>
+                        <input type="text" class="form-control" id="BenefFirstName_1" name="BenefFirstName_1" placeholder="add First Name">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="LastName">Last Name</label>
+                        <input type="text" class="form-control" id="BenefLastName_1" name="BenefLastName_1" placeholder="add Last Name">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="FiscalCode">Fiscal Code</label>
+                        <input type="text" class="form-control" id="BenefFiscalCode_1" name="BenefFiscalCode_1" placeholder="add Fiscal Code">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="Share">Share</label>
+                        <input type="Number" class="form-control" id="BenefShare_1" name="BenefShare_1" placeholder="add Share">
+                    </div>
+
+                </div>
+				<br>				
+                <div class="row" class="col-md-12">
+
+                    <div class="col-md-3">
+                        <label for="FirstName">First Name</label>
+                        <input type="text" class="form-control" id="BenefFirstName_2" name="BenefFirstName_2" placeholder="add First Name">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="LastName">Last Name</label>
+                        <input type="text" class="form-control" id="BenefLastName_2" name="BenefLastName_2" placeholder="add Last Name">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="FiscalCode">Fiscal Code</label>
+                        <input type="text" class="form-control" id="BenefFiscalCode_2" name="BenefFiscalCode_2" placeholder="add Fiscal Code">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="Share">Share</label>
+                        <input type="Number" class="form-control" id="BenefShare_2" name="BenefShare_2" placeholder="add Share">
+                    </div>
+
+                </div>
+				<br>
+				<div class="row" class="col-md-12">
+
+                    <div class="col-md-3">
+                        <label for="FirstName">First Name</label>
+                        <input type="text" class="form-control" id="BenefFirstName_3" name="BenefFirstName_3" placeholder="add First Name">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="LastName">Last Name</label>
+                        <input type="text" class="form-control" id="BenefLastName_3" name="BenefLastName_3" placeholder="add Last Name">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="FiscalCode">Fiscal Code</label>
+                        <input type="text" class="form-control" id="BenefFiscalCode_3" name="BenefFiscalCode_3" placeholder="add Fiscal Code">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="Share">Share</label>
+                        <input type="Number" class="form-control" id="BenefShare_3" name="BenefShare_3" placeholder="add Share">					
+                    </div>
+
+                </div>
+
+            </div>
+		</form>
+	</body>
+</html>
